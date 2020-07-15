@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <main class="container signup-section">
+        <div class="section-content">
+
+            {% if status %}
+                <h2>Your order has been placed.</h2>
+            {% else %}
+                <h2>Please make your selection.</h2>
+
+                <form method="POST" action="/order">
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.pizza.label }}
+
+                        {% if form.pizza.errors %}
+                            {% for error in form.pizza.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.pizza }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.time.label }}
+
+                        {% if form.time.errors %}
+                            {% for error in form.time.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.time }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.now_or_later.label }}
+
+                        {% if form.now_or_later.errors %}
+                            {% for error in form.now_or_later.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.now_or_later }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.delivery.label }}
+
+                        {% if form.delivery.errors %}
+                            {% for error in form.delivery.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.delivery }}
+                    </div>
+
+                    {{ form.submit(class="btn-primary") }}
+                </form>
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}
