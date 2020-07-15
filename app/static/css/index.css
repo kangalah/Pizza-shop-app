@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffffff;
+  }
+  
+  #spantext{
+    color: whitesmoke;
+  }
+  
+  .navi{
+    float: right;
+  }
+  
+  .exc{
+    color: gray;
+  }
+  
+  .pizz{
+      color: gray;
+  }
+  
+  #piz-yum{
+    font-family: 'Shadows Into Light',cursive;
+    font-size: 35px;
+    font-weight: normal;
+    color: red;
+  }
+  
+  li{
+    display:inline;
+    margin-right: 100px;
+  }
+  
+  .h-buttons{
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  
+  .menu-btn{
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #000;
+  }
+  
+  figcaption{
+    font-family: 'Oswald',serif;
+  }
+  
+  #menu{
+    padding-top: 20px;
+  }
+  
+  #order-pizza{
+    color: #000;
+  }
+  
+  #list li{
+    font-size: 24px;
+    font-family: system-ui, serif;
+  }
+  
+  .order-summary h1, .summary, .contact{
+    color: #000;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin-top: 30px;
+  }
+  
+  input[type="email"]{
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: .8rem .7rem;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .click-me{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .get-pizza{
+    margin-top: 40px;
+  }
+  
+  .contact{
+    padding-top: 20px;
+  }
+  
+  .cdata{
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .data{
+    height: inherit;
+    background-color: gray;
+    border-radius: 10px
+  }
+  
+  .go{
+    border-radius: 20px;
+  }
+  
+  .click-me, button[type=submit], .deliver, .delivernot{
+    color: whitesmoke;
+    text-decoration: inherit;
+    display: inline-flex;
+    letter-spacing: 2px;
+    background-color: green;
+    outline-offset: inherit;
+    outline: none;
+    padding: 13px 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: monospace;
+    font-style: oblique;
+  }
+  
+  .deliver, .delivernot{
+    margin: 10px;
+  }
+  
+  h4{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',fantasy;
+    letter-spacing: 2px;
+  }
+  
+  #order-pizza{
+    padding: 20px 50px 20px 50px;
+    font-family: cursive;
+  }
+  
+  .order-overlay{
+    height: auto;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 15px;
+  }
+  
+  .checkout{
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 14px;
+  }
+  
+  #list{
+    color: orange;
+  }
+  
+  .menu{
+    margin-top: 25px;
+    background-image: url("../static/images/sec/b4.jpg");
+    padding: 0;
+  }
+  
+  #menu{
+    font-family: sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    color: red;
+  }
+  
+  .menu-overlay{
+    height: auto;
+    width:auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .landing{
+    background-image: url("../static/images/sec/b1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  a{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    font-kerning: normal;
+  }
+  
+  .overlay{
+    background-color: rgba(256, 0, 0, 0);
+    height: 100%;
+  }
+  
+  .wiggle{
+    align-items: center;
+    align-content: space-between;
+  }
+  
+  #push{
+    padding-top: 10%;
+  }
+  
+  .landing-text{
+    margin-top: none;
+  }
+  
+  .landing-text h1, h2{
+    font-family: monospace;
+    font-weight: 500;
+  }
+  
+  .landing-text h1{
+    font-family: cursive;
+    font-size: 55px;
+    font-style: oblique;
+  }
+  
+  .w-text{
+    margin-top: 150px;
+  }
+  
+  .w-image{
+    margin-top: 15px;
+    margin-left: 90px;
+    margin-bottom: 120px;
+    height: 450px;
+    width: 400px;
+  }
+  
+  .welcome{
+    padding-top: 40px;
+  }
+  
+  .txt{
+    font-family: system-ui, cursive;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .txt-big{
+    font-size: 50px;
+    font-family: cursive;
+  }
+  
+  .rads{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .fab{
+    margin: 65px 10px 0;
+  }
+  
+  .top-nav-collapse{
+    background-color: #3f51b5;
+  }
+  
+  .navbar:not(.top-nav-collapse){
+    background: transparent;
+  }
+  
+  @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+          height: 1000px;
+          overflow-x: hidden;
+      }
+  
+      #push {
+          padding-top: 40%;
+      }
+  
+      .w-txt {
+          margin-top: 50px;
+      }
+  
+      .menu-overlay {
+          width: 100%;
+          height: inherit;
+          background-color: rgba(0, 0, 0, 0.7);
+      }
+  
+      .w-img {
+          margin-left: 20px;
+          margin-bottom: 10px;
+          height: 300px;
+          width: 270px;
+      }
+  
+      .welcome {
+          padding-top: 10px;
+      }
+  
+      .cdata {
+          padding: 10px 5px 10px 5px;
+      }
+  
+  }
+  
+  @media (min-width: 480px) and (max-width: 780px) {
+      html,
+      body,
+      header,
+      .view {
+          height: 650px;
+      }
+  
+      .piz-yum {
+          font-size: 50px;
+      }
+  
+      ul > .nav-items {
+          display: inline;
+          margin-right: 20px;
+          margin-left: 12px;
+      }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: orange;
+  
+      }
+  
+  }
+  
