@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="container signup-section">
+        <div class="section-content">
+            <h2>Hey you should probably login or something... idk? maybe?</h2>
+
+            <form method="POST" action="/login">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.email.label }}
+
+                    {% if form.email.errors %}
+                        {% for error in form.email.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
+
+                    {{ form.email }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.password.label }}
+
+                    {% if form.password.errors %}
+                        {% for error in form.password.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
+
+                    {{ form.password }}
+                </div>
+
+                {{ form.submit(class="btn-primary") }}
+            </form>
+        </div>
+    </main>
+{% endblock %}
