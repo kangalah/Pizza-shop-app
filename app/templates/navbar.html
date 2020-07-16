@@ -23,7 +23,7 @@
             <li><a href="{{url_for('main.profile',uname=current_user.username)}}"> <strong>{{current_user.username| upper}} </strong></a></li>
             <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
             {% else %}
-            <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+            <li><a href="{{url_for('main.order')}}">Sign in</a></li>
             {%endif%}
         </ul>
       <form class="form-inline my-2 my-lg-0">
