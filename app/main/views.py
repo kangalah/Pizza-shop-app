@@ -5,7 +5,7 @@ from .import main
 from .. import db
 from ..models import User
 
-#display categories on the landing page
+
 @main.route('/')
 def index():
     """
