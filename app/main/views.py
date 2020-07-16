@@ -22,8 +22,15 @@ def index():
 @main.route('/order')
 def order():
    '''
-    View movie page function that returns the movie details page and its data
+    order page function that returns the order details page and its data
     '''
     return render_template('order.html') 
+
+@main.route('/signup')
+def signup():
+   '''
+    Signup page function that returns the signup details page and its data
+    '''
+    return render_template('signup.html')
 
     
