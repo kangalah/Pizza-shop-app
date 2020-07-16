@@ -21,14 +21,14 @@ def index():
 
 @main.route('/order')
 def order():
-   '''
+    '''
     order page function that returns the order details page and its data
     '''
     return render_template('order.html') 
 
 @main.route('/signup')
 def signup():
-   '''
+    '''
     Signup page function that returns the signup details page and its data
     '''
     return render_template('signup.html')
